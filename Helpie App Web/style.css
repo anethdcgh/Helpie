@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-image: url('Pink Simple Minimalist Skincare Shop Website Dekstop Prototype (2).png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #d1a8eb;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    padding-top: 8vh;
+    padding-left: 4vw; 
+    margin-left: 0; 
+    max-width: none; 
+    width: 100%;
+}
+
+.welcome-content {
+    max-width: 600px;
+    margin-left: 0; 
+    text-align: left;
+}
+
+
+  
+  .welcome-text {
+    color: white; 
+    font-family: "Dancing Script", cursive;
+    font-size: 3.5rem;
+    margin: 0;
+    line-height: 1;
+  }
+  
+  .brand-name {
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    letter-spacing: 0; 
+  }
+  
+  /* Colores específicos para cada letra de HELPIE */
+  .brand-name .white {
+    color: white;
+  }
+  
+  .brand-name .purple {
+    color: #8a4a9e; /* Color morado */
+  }
+  
+  .brand-name .orange {
+    color: #f8a13f; /* Color naranja */
+  }
+  
+  .brand-name .cream {
+    color: #f5e6d3; /* Color crema */
+  }
+  
+  .buttons {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .btn-signin,
+  .btn-signup {
+    background-color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 35px;
+    margin-right: 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #8a4a9e;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-signin:hover,
+  .btn-signup:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+  }
+  
+  .info-text {
+    color: white;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  
+  .info-text p {
+    margin: 0;
+  }
+  
+  .info-text p:last-child {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  
