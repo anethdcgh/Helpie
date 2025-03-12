@@ -1,0 +1,169 @@
+/*Variables de colores*/
+:root {
+    --primary-purple: #8e44ad;
+    --light-purple: #e6d0f7;
+    --orange: #e67e22;
+    --white: #ffffff;
+}
+
+/*Estilos generales*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*Estilos del encabezado*/
+.bg-primary-custom {
+    background-color: var(--primary-purple);
+}
+
+.nav-brand {
+    background-color: var(--light-purple);
+    color: var(--primary-purple);
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    margin-left: -80px;
+}
+
+.nav-link {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--light-purple);
+}
+
+/*Estilos del contenido principal*/
+.bg-secondary-custom {
+    background-color: var(--light-purple);
+}
+
+/*Estilos de las tarjetas*/
+.card-custom {
+    background-color: var(--white);
+    border-radius: 15px;
+    padding: 20px;
+    height: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-container {
+    width: 60px;
+    height: 60px;
+    background-color: var(--light-purple);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.icon-img {
+    max-width: 40px;
+    max-height: 40px;
+    display: block;
+}
+
+.card-custom h3 {
+    color: var(--primary-purple);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.card-custom p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Estilos de los botones */
+.btn-primary-action {
+    background-color: var(--primary-purple);
+    color: var(--white);
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-orange-action {
+    background-color: var(--primary-purple);
+    color: var(--white);
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary-action:hover, .btn-orange-action:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-menu {
+        justify-content: center;
+        margin-top: 15px;
+    }
+    
+    .nav-menu li {
+        margin: 0 10px;
+    }
+    
+    .nav-brand {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        width: fit-content;
+    }
+}
+
+
+@keyframes float {
+    0% {
+      transform: translateY(0);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(142, 68, 173, 0.2);
+    }
+    100% {
+      transform: translateY(0);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .card-custom:hover {
+    animation: float 0s ease-out;
+    cursor: pointer;
+  }
+
+.card-custom:hover {
+    transform: translateY(-10px);
+    background-color: #fcf7ff;
+}
