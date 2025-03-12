@@ -1,0 +1,132 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.background-container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Pink%20Simple%20Minimalist%20Skincare%20Shop%20Website%20Dekstop%20Prototype%20%283%29-zBIPwVmAybLpxqsOHPRKfNoX4ejDDS.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column; /* Cambiado a columna para apilar elementos verticalmente */
+}
+
+/* Nuevo espaciador para empujar el contenido hacia abajo */
+.spacer {
+    height: 250px; /* Ajusta este valor para mover los textos más abajo */
+}
+
+.content-wrapper {
+    width: 100%;
+}
+
+/* Estilos para la sección de Misión */
+.mission {
+    text-align: left;
+    padding-right: 0;
+}
+
+.mission h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.mission p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 400px;
+}
+
+/* Estilos para la sección de Visión */
+.vision {
+    text-align: right;
+    padding-left: 0;
+}
+
+.vision h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.vision p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-left: auto;
+    max-width: 400px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .spacer {
+        height: 200px; /* Reducido para móviles */
+    }
+    
+    .mission, .vision {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .mission p, .vision p {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+}
+
+/*Variables de colores*/
+:root {
+    --primary-purple: #cf661b;
+    --light-purple: #f7c7a7;
+    --orange: #e67e22;
+    --white: #ffffff;
+}
+
+/*Estilos generales*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*Estilos del encabezado*/
+.bg-primary-custom {
+    background-color: var(--primary-purple);
+}
+
+.nav-brand {
+    background-color: var(--light-purple);
+    color: var(--primary-purple);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    margin-left: -45px;
+}
+
+.nav-link {
+    color: var(#ffffff);
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--light-purple);
+}
