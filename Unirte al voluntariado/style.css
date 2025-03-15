@@ -1,0 +1,161 @@
+:root {
+    --primary-color: #f26e21;
+    --primary-light: #ffd0b7;
+    --background-color: #ffb999;
+    --text-color: #333;
+    --white: #fff;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Navbar styles */
+.navbar-container {
+    background-color: var(--primary-color);
+}
+
+.navbar {
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    color: var(--white);
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    background-color: var(--primary-light);
+    border-radius: 2rem;
+}
+
+.nav-link {
+    color: var(--white) !important;
+    font-size: 1.2rem;
+    margin: 0 0.5rem;
+}
+
+/* Back link styles */
+.back-link {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.back-link a {
+    color: var(--primary-color);
+}
+
+.back-arrow {
+    font-weight: lighter;
+}
+
+/* Volunteer card styles */
+/* ... mantener los estilos anteriores hasta .volunteer-card ... */
+
+.volunteer-card {
+    border-radius: 1.5rem;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1000px; /* Limitar el ancho máximo */
+    margin: 0 auto; /* Centrar la tarjeta */
+}
+
+.volunteer-card .row {
+    margin: 0; /* Eliminar márgenes innecesarios */
+}
+
+.volunteer-card .col-md-5,
+.volunteer-card .col-md-7 {
+    padding: 0; /* Eliminar padding innecesario */
+}
+
+.volunteer-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-body {
+    padding: 2rem !important; /* Ajustar el padding del contenido */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    color: var(--text-color);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    margin-bottom: 1.5rem;
+    flex-grow: 1; /* Permitir que el texto ocupe el espacio disponible */
+}
+
+/* Ajustar los botones para que estén al final */
+.button-container {
+    margin-top: auto;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .volunteer-card {
+        margin: 1rem;
+    }
+    
+    .card-body {
+        padding: 1.5rem !important;
+    }
+    
+    .volunteer-card img {
+        height: 300px; /* Altura fija para móviles */
+    }
+}
+/* ... mantener los estilos anteriores ... */
+
+/* Button styles - actualización */
+.btn {
+    border-radius: 2rem;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    border: none;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-location,
+.btn-calendar {
+    background-color: var(--primary-color);
+    color: var(--white) !important; /* Forzar color blanco */
+}
+
+.btn-location:hover,
+.btn-calendar:hover {
+    background-color: #e05d10; /* Versión más oscura del color primario */
+    color: var(--white) !important;
+    transform: translateY(-2px);
+}
+
+.button-container {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .button-container {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
