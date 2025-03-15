@@ -1,0 +1,100 @@
+/*Variables de colores*/
+:root {
+    --primary-purple: #8e44ad;
+    --light-purple: #e6d0f7;
+    --orange: #e67e22;
+    --white: #ffffff;
+}
+
+/*Estilos generales*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos personalizados */
+body {
+    background-color: var(--light-purple);
+    min-height: 100vh;
+}
+
+/*Estilos del encabezado*/
+.bg-primary-custom {
+    background-color: var(--primary-purple);
+}
+
+.nav-brand {
+    background-color: var(--light-purple);
+    color: var(--primary-purple);
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    margin-left: -80px;
+}
+
+.nav-link {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--light-purple);
+}
+
+/* Botón flotante */
+.btn-floating {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background-color: #8e44ad;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-floating:hover {
+    background-color: #7d3c96;
+  }
+  
+  /* Estilos para las tarjetas de experiencias */
+  .experiencia-card {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .experiencia-card h3 {
+    color: #8e44ad;
+    margin-bottom: 0.5rem;
+  }
+  
+  .experiencia-card .autor {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 1rem;
+  }
