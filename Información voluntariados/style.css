@@ -1,0 +1,54 @@
+:root {
+    --primary-purple: #8e44ad;
+    --light-purple: #f3e5f5;
+    --orange-btn: #f4511e;
+}
+
+body {
+    background-color: var(--light-purple);
+}
+
+.custom-navbar {
+    background-color: var(--primary-purple);
+    padding: 1rem 0;
+}
+
+.navbar-brand, .nav-link {
+    color: white !important;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Nuevo estilo para el contenedor de imagen */
+.card-img-top {
+    width: 100%;
+    height: 250px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Hace que la imagen cubra todo el espacio */
+    object-position: center; /* Centra la imagen */
+}
+
+.btn-primary {
+    background-color: var(--orange-btn);
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: 25px;
+}
+
+.btn-primary:hover {
+    background-color: #e64a19;
+}
+
+h1 {
+    color: var(--primary-purple);
+    font-weight: bold;
+}
